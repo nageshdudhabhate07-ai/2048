@@ -4,22 +4,32 @@ body {
     min-height: 100vh;
 
     display: flex;
-    flex-direction: column;   /* stack items vertically */
-    justify-content: center;  /* vertical center */
-    align-items: center;      /* horizontal center */
+    flex-direction: row;   /* horizontal layout */
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
 
     font-family: Arial, sans-serif;
-    gap: 30px;                /* space between items */
+    gap: 40px;                /* space between items */
+    background-color: #f4f6f9;
 }
 
-/* Style links as blocks so image + text stay grouped */
+/* Style links as cards */
 a {
     text-decoration: none;
     color: black;
     text-align: center;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   /* image above text */
     align-items: center;
+
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 260px;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Image styling */
@@ -27,11 +37,11 @@ a {
     width: 220px;
     height: auto;
     border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 12px;
 }
 
 /* Hover effect */
-.photo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
