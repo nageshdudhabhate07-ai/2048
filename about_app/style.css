@@ -1,0 +1,98 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #faf8ef;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #776e65;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #8f7a66;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Lists */
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  text-decoration: none;
+  color: #8f7a66;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #bbada0;
+}
+
+/* Buttons */
+button {
+  background: #8f7a66;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #9f8b77;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
